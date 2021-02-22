@@ -1,22 +1,20 @@
-//val diceRange = 1..6;
-//val randomNumber = diceRange.random();
-
-val myFirstDice = Dice();
-fun main(){
-	println("This is a "+" "+ myFirstDice.sides + " "+"Sided Dice")
-	myFirstDice.roll()
-//	print("Random Number: ${randomNumber}")
+fun main() {
+    val myFirstDice = Dice(6)
+    val diceRoll = myFirstDice.roll()
+    println("Your ${myFirstDice.numSides} sided dice rolled ${diceRoll}!")
+	
+	val mySecondDice= Dice(20)
+	//myFirstDice.numSides = 20
+	println("Your ${mySecondDice.numSides} sided dice rolled ${mySecondDice.roll()}!")
 	
 }
 
 
-class Dice{
-	var sides =6
-	
-	fun roll(){
-		val diceRange = 1..6;
-		val randomNumber = diceRange.random();
-		print(randomNumber)
-	}
-	
+class Dice(val numSides:Int) {
+    //var sides = 6
+
+    fun roll(): Int {
+        val randomNumber = (1..numSides).random()
+        return randomNumber
+    }
 }

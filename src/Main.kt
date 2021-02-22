@@ -1,10 +1,13 @@
 val age = 23;
-val name = "Kamau Mbugua";
+val name = "Sam Doe";
+val border = ":--:"
+
 fun main() {
-   printBoder()
+	
+   printBoder(border)
     println("Happy Birthday, ${name}!")
-    printBoder()
-    println("\n")
+    printBoder(border)
+    /*println("\n")
     println("\n")
     
     
@@ -19,13 +22,13 @@ fun main() {
     println("@@@@@@@@@@@")
     println("{~@~@~@~@~}")
     println("@@@@@@@@@@@")
-    println("")
+    println("")*/
     
 }
 
-fun printBoder(){
-     repeat(23){
-         print("= ");
+fun printBoder(border: String){
+     repeat(8){
+         print(border);
      }
      println();
     

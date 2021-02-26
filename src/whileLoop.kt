@@ -18,7 +18,7 @@ fun main(){
 	
 	val names = listOf("Jessica", "Henry", "Alicia", "Jose")
 	for(name in names.sorted()){
-		println(name)
+		println(name+" "+"Has Number a Charachers of"+" "+name.length)
 	}
 
 }

@@ -1,6 +1,6 @@
 fun main(){
 val numbers :List<Int> = listOf(1,2,3,4,5,6,7)
-	val number = listOf(1,2,3,4,5,6)
+	val number = listOf(1,12,33,48,555,6120)
 	
 	println("LIST: ${numbers.size} ")
 	println("LIST: "+ number.size)
@@ -31,4 +31,8 @@ val numbers :List<Int> = listOf(1,2,3,4,5,6,7)
 	println("Contains 7? ${numbers.contains(7)}")
 	println("Contains 7? ${numbers.contains(8)}")
 	println("Contains 7? ${numbers.contains(0)}")
+	
+	println()
+	println()
+	println("${number.sorted()}")
 }

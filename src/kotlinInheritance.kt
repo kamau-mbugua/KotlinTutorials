@@ -9,7 +9,7 @@ fun main(){
     println("Capacity: ${squareCabin.capacity}")
     println("Material: ${squareCabin.buildingMaterial}")
     println("Has room? ${squareCabin.hasRoom()}")
-	println("Floor area: ${floorArea()}")
+	//println("Floor area: ${floorArea()}")
 	
 	val roundHut = RoundHut(3, 10.0)
 	

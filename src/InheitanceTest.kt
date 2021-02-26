@@ -2,11 +2,11 @@ import kotlin.math.PI
 
 fun main() {
 
-    val squareCabin = SquareCabin1(6, 50.0)
-    val roundHut = RoundHut1(3, 10.0)
-    val roundTower = RoundTower1(4, 15.5)
+    val squareCabin1 = SquareCabin1(6, 50.0)
+    val roundHut1 = RoundHut1(3, 10.0)
+    val roundTower1 = RoundTower1(4, 15.5)
 
-    with(squareCabin) {
+    with(squareCabin1) {
         println("\nSquare Cabin\n============")
         println("Capacity: ${capacity}")
         println("Material: ${buildingMaterial}")
@@ -14,7 +14,7 @@ fun main() {
         println("Floor area: ${floorArea()}")
     }
 
-    with(roundHut) {
+    with(roundHut1) {
         println("\nRound Hut\n=========")
         println("Material: ${buildingMaterial}")
         println("Capacity: ${capacity}")
@@ -22,7 +22,7 @@ fun main() {
         println("Floor area: ${floorArea()}")
     }
 
-    with(roundTower) {
+    with(roundTower1) {
         println("\nRound Tower\n==========")
         println("Material: ${buildingMaterial}")
         println("Capacity: ${capacity}")

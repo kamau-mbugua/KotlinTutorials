@@ -4,18 +4,23 @@ class Noodles: Item("Noodles", 10){
 		return name
 	}
 }
-class Vagetables(val topping1:String,
-				 val topping2:String,
-				 val topping3:String,
-) :Item("Vagetables", 15){
+class Vagetables(vararg val toppings:String) :Item("Vagetables", 15){
 	override fun toString():String{
-		return name
+		if(toppings.isEmpty()){
+			return "$name Chef's Choice"
+		}
+		else{
+		return name+":" + " "+ toppings.joinToString("-")
+		}
+		
 	}
 }
 fun main() {
 	val noodies = Noodles()
 	val vegetables = Vagetables("Cabbages","Sprouts","Onion")
+	val vegetables1 = Vagetables()
 	println(noodies)
 	println(vegetables)
+	println(vegetables1)
 	
 }

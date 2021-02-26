@@ -9,10 +9,15 @@ fun main(){
 	}
 	 println("Total Guest Count: $totalGuests")
 	
+	for (num in guestPerFamily.sorted())
+	{
+		
+		println(num)
+	}
 	//For Loop
 	
 	val names = listOf("Jessica", "Henry", "Alicia", "Jose")
-	for(name in names){
+	for(name in names.sorted()){
 		println(name)
 	}
 

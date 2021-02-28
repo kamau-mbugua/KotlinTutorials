@@ -53,11 +53,31 @@ fun main(){
 	val filteredNames= peopleAges.filter{it.key.length <4}
 	println(filteredNames)
 	
-	///
+	///Lamdas
 	
 	println()
 	
 	val number:Int = 5
-	val tripple:(Int) -> Int = {a: Int -> a * 3}
+	val tripple:(Int) -> Int = {a: Int -> a * 3/*||it * 3*/}
 	println(tripple(3))
+	
+	//Higher-order functions
+	println()
+	val peopleNames = listOf("Fred", "Ann", "Barbara", "Joe")
+    println(peopleNames.sorted())
+	
+	println()
+	
+	println(peopleNames.sortedWith{str1:String, str2:String -> str1.length - str2.length})
+
+	
+	println()
+	
+	val words = listOf("about", "acute", "awesome", "balloon", "best", "brief", "class", "coffee", "creative")
+	val filteredWords = words.filter { it.startsWith("b", ignoreCase = true) }
+	.shuffled()
+	.take(2)
+	.sorted()
+
+	println(filteredWords)
 }

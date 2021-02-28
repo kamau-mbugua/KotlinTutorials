@@ -38,6 +38,18 @@ fun main(){
 	peopleAges["Joe"] =52
 	peopleAges["Fred"] =31
 	println(peopleAges)
+	//goes through all the items for you and performs an operation on each one.
 	peopleAges.forEach{print("${it.key} is ${it.value} ,")}
 	
+	println()
+	//The map() function (which shouldn't be confused with a map or dictionary collection above)
+	//applies a transformation to each item in a collection.
+	
+	//peopleAges.map applies a transformation to each item in peopleAges and creates a new collection of the transformed items
+	println(peopleAges.map { "${it.key} is ${it.value}" } . joinToString(", "))
+	//oinToString(", ") adds each item in the transformed collection to a string, separated by , and it knows not to add it to the last item
+	println()
+	//The filter() function returns the items in a collection that match, based on an expression.
+	val filteredNames= peopleAges.filter{it.key.length <4}
+	println(filteredNames)
 }

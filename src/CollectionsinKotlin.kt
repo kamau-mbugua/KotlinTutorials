@@ -34,7 +34,9 @@ fun main(){
 	val peopleAges = mutableMapOf<String, Int>(
 	"Fred" to 30,
 	"Ann" to 23)
-	
+	peopleAges.put("Barnabas", 42)
+	peopleAges["Joe"] =52
+	peopleAges["Fred"] =31
 	println(peopleAges)
 	
 }

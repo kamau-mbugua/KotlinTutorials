@@ -5,4 +5,11 @@ fun main(){
 	println("List size: ${numbers.size}")
 	println("Sorted List: ${numbers.sorted()}")
 	
+	// a set. It's a group of related items, but unlike a list,
+	//there can't be any duplicates,
+	// and the order doesn't matter
+	
+	val setOfNumbers = numbers.toSet()
+	println("set: ${setOfNumbers}")
+	
 }

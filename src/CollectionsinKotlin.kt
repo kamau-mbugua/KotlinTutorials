@@ -38,5 +38,6 @@ fun main(){
 	peopleAges["Joe"] =52
 	peopleAges["Fred"] =31
 	println(peopleAges)
+	peopleAges.forEach{print("${it.key} is ${it.value} ,")}
 	
 }

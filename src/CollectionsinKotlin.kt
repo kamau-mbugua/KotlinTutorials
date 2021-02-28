@@ -12,6 +12,8 @@ fun main(){
 	val setOfNumbers = numbers.toSet()
 	println("set: ${setOfNumbers}")
 	
+	println("contains 7: ${setOfNumbers.contains(7)}")
+	
 	//Mutable Set
 	
 	val set1 = setOf(1,2,3)

@@ -12,4 +12,11 @@ fun main(){
 	val setOfNumbers = numbers.toSet()
 	println("set: ${setOfNumbers}")
 	
+	//Mutable Set
+	
+	val set1 = setOf(1,2,3)
+	val set2= mutableSetOf(3,2,1)
+	
+	println("$set1 == $set2: ${set1 == set2}")
+	
 }

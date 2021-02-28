@@ -52,4 +52,12 @@ fun main(){
 	//The filter() function returns the items in a collection that match, based on an expression.
 	val filteredNames= peopleAges.filter{it.key.length <4}
 	println(filteredNames)
+	
+	///
+	
+	println()
+	
+	val number:Int = 5
+	val tripple:(Int) -> Int = {a: Int -> a * 3}
+	println(tripple(3))
 }

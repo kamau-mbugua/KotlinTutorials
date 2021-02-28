@@ -21,4 +21,20 @@ fun main(){
 	
 	println("$set1 == $set2: ${set1 == set2}")
 	
+	
+   /*A map is a set of key-value pairs,
+   //designed to make it easy to look up a value given
+   // a particular key. Keys are unique, and each key
+   //maps to exactly one value, but the values can have duplicates.
+   //Values in a map can be strings, numbers, or objects—even another
+   //collection like a list or a set.*/
+	
+	println()
+	
+	val peopleAges = mutableMapOf<String, Int>(
+	"Fred" to 30,
+	"Ann" to 23)
+	
+	println(peopleAges)
+	
 }
